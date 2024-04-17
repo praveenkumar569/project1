@@ -10,7 +10,7 @@ steps{
  post{
  success
  {
- emailext body: 'Email sent out from jenkins', subject: 'test email', to: 'gorlamandalabhavya@gmail.com'
+ emailext attachLog: true, body: 'Email sent out from jenkins', subject: 'test email-success', to: 'gorlamandalabhavya@gmail.com'
  }
  }
  }
