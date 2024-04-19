@@ -1,17 +1,1 @@
-pipeline{
-agent any
-
- stages{
-stage('Build'){
-steps{
- echo "Builing the project"
- }
- }
- post{
- success
- {
- emailext attachLog: true, body: 'Email sent out from jenkins', subject: 'test email-success', to: 'gorlamandalabhavya@gmail.com'
- }
- }
- }
- 
+hi this is praveen jenkins
